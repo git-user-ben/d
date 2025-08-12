@@ -1,12 +1,14 @@
+#1
 curl -SsL https://playit-cloud.github.io/ppa/key.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/playit.gpg >/dev/null
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/playit.gpg] https://playit-cloud.github.io/ppa/data ./" | sudo tee /etc/apt/sources.list.d/playit-cloud.list
 sudo apt update
-
+#2
 sudo apt install playit
-
+#3
 wget -O /etc/playit.toml https://raw.githubusercontent.com/git-user-ben/d/refs/heads/main/playit.toml
-
+#4
 systemctl enable --now ssh
 systemctl enable --now playit
-
+#5
 echo done
+#6
