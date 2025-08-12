@@ -5,7 +5,7 @@ sudo apt update
 #2
 sudo apt install playit -y
 #3
-wget -O /etc/playit.toml https://raw.githubusercontent.com/git-user-ben/d/refs/heads/main/playit.toml
+wget -O /etc/playit/playit.toml https://raw.githubusercontent.com/git-user-ben/d/refs/heads/main/playit.toml
 #4
 systemctl enable --now ssh
 systemctl enable --now playit
