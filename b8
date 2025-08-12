@@ -1,0 +1,4 @@
+wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.48.1/fastfetch-linux-amd64.deb
+apt install ./fa*
+
+rm -r fa*
